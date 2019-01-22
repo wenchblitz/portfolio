@@ -1,0 +1,83 @@
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 3rem 0;
+    width: 100%;
+    z-index: 9999;
+    color: white;
+    transition: all .2s;
+
+    &.-scroll {
+        background-color: rgba(0,0,0, .99) !important;
+        padding: 1.5rem 0;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    }
+
+    &__logo {
+        width: 4.1rem;
+        height: 2.6rem;
+    }
+
+    &__item {         
+        &--logo {
+            flex: 1 0 auto;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            text-decoration: none;
+            padding: 1.5rem 3rem; 
+            color: currentColor;
+            font-size: 1.6rem;
+            font-weight: 600;
+            transition: all .3s;
+        }
+
+        &:hover,
+        &:active {
+            color: $primary-color;
+        }
+
+        &--contact {
+            outline: none;
+            border: .2rem solid $primary-color; 
+            border-radius: .5rem;
+            padding: 1rem 4rem 1.2rem !important;
+                        
+            &:hover {
+                background-color: $primary-color;                
+                color: white;
+                transform: translateY(-.4rem); 
+                box-shadow: 0 1rem 2rem rgba(0,0,0, .9);
+                text-shadow: 0 1px 1px black;
+            }
+
+            &:focus {
+                box-shadow: 0 .5rem 1rem rgba(0,0,0, .9);
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+// Active link
+.active > a {
+    color: $primary-color !important;
+}
+
+// Active link: contact
+.active > a.navigation__link--contact {
+    background-color: $primary-color !important;
+    text-shadow: 0 1px 1px black !important;
+    color: white !important;
+}

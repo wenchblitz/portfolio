@@ -1,0 +1,30 @@
+// SKills
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 2rem; 
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-shadow: 0 .2rem .1rem black;
+    
+    &__box {
+        display: flex;
+    }
+
+    &__icon {
+        margin-right: .5rem; 
+        width: 2rem; 
+        height: 2rem;
+        fill: $primary-color; 
+        align-self: center;     
+        
+        &--code {
+            fill: #555;
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+}

@@ -1,0 +1,167 @@
+.getintouch {
+    display: flex;
+
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 120rem;
+    height: 50rem;
+
+    background-color: white;
+    box-shadow: 0 5rem 7rem rgba(0,0,0, .9);
+
+    &__map {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 60%;
+        height: 100%;
+    }
+
+    &__form {
+        color: white;
+        width: 40%;
+        height: 100%;
+        background-color: #111;
+    }
+}
+
+.form {    
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    &__group {
+        position: relative;  
+    }
+
+    &__label, 
+    &__input,
+    &__message,
+    &__submit {
+        font-family: inherit;
+        margin: 0;      
+        outline: none;
+        border: none;
+    }
+
+    &__label {
+        font-family: $header-font;
+        position: absolute;
+        transform: translateY(.5rem);
+        left: 5%;
+        font-size: 1.2rem;
+        color: $primary-dark-color;
+        transition: all .3s;        
+    }
+
+    &__input {
+        color: currentColor; 
+        font-family: $display-font !important;
+        padding: 2.5rem 1.7rem 1rem 0rem;
+        border: none;
+        font-size: 1.6rem;
+        outline: none;
+        width: 90%;       
+        transition: all .5s;
+    }
+    
+    &__input:placeholder-shown,
+    &__message:placeholder-shown { 
+        font-family: $header-font !important;    
+    }
+
+    &__input:placeholder-shown + &__label,
+    &__message:placeholder-shown + &__label,
+    &__message:placeholder-shown:not(:focus) + &__label {
+        opacity: 0;
+        visibility: hidden;        
+        transform: translateY(1rem);
+    }
+
+    &__input,
+    &__message {
+        font-family: $header-font;
+        font-size: 1.4rem;
+        background-color: #111111;
+        border-bottom: .1rem solid rgba($primary-dark-color, .1);
+
+        &:focus {
+            outline: none;
+            border-bottom: .1rem solid $primary-color;
+        }
+    }
+    
+    &__message {
+        color: currentColor;
+        font-family: $display-font;
+        padding: 2.5rem 1.7rem 1rem 0rem;
+        border: none;
+        font-size: 1.6rem;
+        outline: none;
+        width: 90%;
+        transition: all .5s;     
+        background-color: #111111;
+        font-size: 1.4rem;
+        height: 28rem;
+        border-bottom: .1rem solid rgba($primary-dark-color, .3);
+    }
+
+    &__submit {
+        border: none;
+        display: inline-block;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $grey-4;
+        text-shadow: 0 .1rem 0 rgba(255,255,255, .3);
+        cursor: pointer;
+        outline: none;
+        background-color: rgba($primary-color, .75);
+        padding: 1.5rem 4rem 1.7rem !important;
+        width: 90%;
+        margin-top: 1rem;
+        transition: all .5s;
+
+        &:hover {
+            background-color: $primary-color;
+        }
+    }
+
+    h4 {
+        margin-top: 1rem;
+        font-weight: normal;
+        color: $grey-light-4;
+    }
+}
+
+label.error {    
+    position: absolute;
+    font-family: $header-font;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: $accent-dark-color;
+}
+
+label#fullname-error {    
+    top: .5rem;
+    left: 9.2rem;
+}
+
+label#email-error {    
+    top: .5rem;
+    left: 6.5rem;
+}
+
+label#message-error {    
+    top: .6rem;
+    left: 8rem;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}  

@@ -1,0 +1,21 @@
+# Ignore files
+debugger.css
+gulpfile.js
+rtl.css
+phpcs.xml.dist
+index.html
+
+# Ignore file extensions
+*.json
+*.zip
+*.txt
+
+# Ignore dev folder(s)
+node_modules/
+dist/
+languages/
+exclude/
+img/icomoon/
+js/exclude/
+img/exclude/
+img/essential/

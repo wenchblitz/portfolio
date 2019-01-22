@@ -1,0 +1,63 @@
+#contact {
+    // height: 100vh;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(0,0,0, .5) 0%, rgba(0,0,0, .5) 100%), url(./img/contact-bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+        color: white;        
+        word-spacing: .5rem;
+        text-shadow: 0 .2rem .2rem black;
+    }
+}
+
+.contact {
+    color: white;
+    text-align: center;
+
+    &__info {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 5rem;
+        // margin-bottom: 2.5rem;
+      
+        &-items {
+            transition: all .5s;
+
+            &:hover {
+                transform: scale(1.15) translateY(-2rem);
+
+                p {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &-icon {
+            width: 6.5rem;
+            height: 6.5rem;                    
+            fill: $primary-dark-color;
+
+            &.-drop {
+                width: 2rem;
+                height: 2rem;   
+                fill: $primary-dark-color;
+                transform: translateY(4px);
+                margin-right: .5rem;
+            }
+
+            &.-send {
+                width: 2rem;
+                height: 2rem; 
+                fill: #112211;
+            }
+        }
+
+        p {
+            margin-top: .5rem;
+        }
+    }
+}
+

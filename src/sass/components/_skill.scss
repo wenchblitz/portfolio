@@ -1,0 +1,112 @@
+.skill {    
+        margin-bottom: .85rem;   
+        font-weight: 600;
+
+    &__bar {
+        height: 3rem;
+        background-color: $grey-3;
+        position: relative;
+    }
+
+    &__name {
+        position: absolute;
+        top: 50%;
+        left: 1rem;        
+        color: $grey-4;
+        font-size: 1.4rem;
+        text-shadow: 0 .1rem 0 rgba(255,255,255, .3);
+        transform: translateY(-50%);
+        
+        &.-strong {
+            color: white;
+            font-weight: 600;
+            text-shadow: 0 .1rem .1rem rgba(0,0,0, .3);
+        }
+    }
+
+    &__percentage {
+        padding: 1rem;
+        color: $grey-4;        
+        font-weight: 600;
+        height: 3rem;
+        background-color: $primary-color;
+    }
+
+    // Technical Skills
+    &__html { width: 99%; }
+    &__css-sass {width: 95%; }
+    &__javascript { width: 85%; }
+    &__jquery { width: 80%; }
+    &__npm-git-gulp { width: 85%; }
+    &__wordpress-bootstrap { width: 90%; }
+    &__java-php-csharp { width: 75%; }
+    &__mysql { width: 60%; }
+    &__adobe-ps { width: 90%; }
+    &__adobe-ai { width: 75%; }
+    &__adobe-xd { width: 80%; }
+    &__vscode { width: 95%; }
+    
+    // Key Skills
+    &__psd-mockup { width: 100%; }
+    &__convert-psd2html { width: 100%; }
+}
+
+// Technical Skills
+@keyframes html {
+    0% { width: 0%; }
+    100% { width: 99%; }
+}
+@keyframes css {
+    0% { width: 0%; }
+    100% { width: 95%; }
+}
+@keyframes js {
+    0% { width: 0%; }
+    100% { width: 85%; }
+}
+@keyframes jq {
+    0% { width: 0%; }
+    100% { width: 80%; }
+}
+@keyframes ngg {
+    0% { width: 0%; }
+    100% { width: 85%; }
+}
+@keyframes wb {
+    0% { width: 0%; }
+    100% { width: 90%; }
+}
+@keyframes jpc {
+    0% { width: 0%; }
+    100% { width: 75%; }
+}
+@keyframes mysql {
+    0% { width: 0%; }
+    100% { width: 60%; }
+}
+@keyframes ps {
+    0% { width: 0%; }
+    100% { width: 90%; }
+}
+@keyframes ai {
+    0% { width: 0%; }
+    100% { width: 75%; }
+}
+@keyframes xd {
+    0% { width: 0%; }
+    100% { width: 80%; }
+}
+@keyframes vscode {
+    0% { width: 0%; }
+    100% { width: 95%; }
+}
+// Key Skills
+@keyframes psm {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+@keyframes cp2h {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
