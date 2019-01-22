@@ -4,11 +4,13 @@ gulpfile.js
 rtl.css
 phpcs.xml.dist
 index.html
+Resume of Jhonson V. Trazona.pdf
 
 # Ignore file extensions
 *.json
 *.zip
 *.txt
+*.pdf
 
 # Ignore dev folder(s)
 node_modules/

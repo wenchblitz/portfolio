@@ -254,7 +254,7 @@
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-magnifying-glass1"></use>
                                     </svg>
                                 </a>
-                                <a href="javascript:void()" class="portfolio__item-source-code" title="View Source">
+                                <a href="https://github.com/wenchblitz/portfolio/" target="_blank" class="portfolio__item-source-code" title="View Source">
                                     <svg class="portfolio__item-source-code-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-github2"></use>
                                     </svg>
