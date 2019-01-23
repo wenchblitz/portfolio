@@ -124,7 +124,7 @@
     <section id="technology" class="tech">
         <div class="container">
             <h1>Web Technology</h1>
-            <div class="tech__tools aniview" data-av-animation="slideInRight">                
+            <div class="tech__tools">                
                 <svg class="tech__tools-icon">
                     <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-html5"></use>
                 </svg>
@@ -154,7 +154,7 @@
     </section>
 
     <section id="portfolio">
-        <h1>Portfolio</h1>
+        <h1 class="aniview" data-av-animation="slideInRight">Portfolio</h1>
         <div class="container">
 
             <ul class="filtermenu">
@@ -421,16 +421,16 @@
                 <!-- Graphics -->
                 <div class="portfolio__items graphics">
                     <figure class="portfolio__item">
-                        <img src="<?php bloginfo('template_directory'); ?>/img/graphics00.jpg" alt="" class="portfolio__item-image">                       
+                        <img src="<?php bloginfo('template_directory'); ?>/img/graphics00.jpg" alt="Family Day 2018" class="portfolio__item-image">                       
                         <figcaption>
                             <h3 class="portfolio__item-title">Family Day 2018</h3>
                             <div class="portfolio__item-overview">
-                                <a href="javascript:void()" class="portfolio__item-graphics" title="View Image">
+                                <a href="<?php bloginfo('template_directory'); ?>/img/graphics00-main.jpg" data-rel="lightcase:graphics" data-lc-caption="I'm using Adobe Photoshop CC." class="portfolio__item-graphics" title="Family Day 2018">
                                     <svg class="portfolio__item-project-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-magnifying-glass1"></use>
                                     </svg>
                                 </a>
-                                <a href="javascript:void()" class="portfolio__item-graphics" title="Download">
+                                <a href="http://www.mediafire.com/file/qvnijhe978kvclt/graphics00-main.jpg/file" target="_blank" class="portfolio__item-graphics" title="Download">
                                     <svg class="portfolio__item-project-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-download1"></use>
                                     </svg>
@@ -451,16 +451,16 @@
 
                 <div class="portfolio__items graphics">
                     <figure class="portfolio__item">
-                        <img src="<?php bloginfo('template_directory'); ?>/img/graphics01.jpg" alt="" class="portfolio__item-image">                       
+                        <img src="<?php bloginfo('template_directory'); ?>/img/graphics01.jpg" alt="SJSM Intramurals 2017" class="portfolio__item-image">                       
                         <figcaption>
                             <h3 class="portfolio__item-title">SJSM Intramurals 2017</h3>
                             <div class="portfolio__item-overview">
-                                <a href="javascript:void()" class="portfolio__item-graphics" title="View Image">
+                                <a href="<?php bloginfo('template_directory'); ?>/img/graphics01-main.jpg" data-rel="lightcase:graphics" data-lc-caption="I'm using Adobe Photoshop CC." class="portfolio__item-graphics" title="SJSM Intramurals 2017">
                                     <svg class="portfolio__item-project-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-magnifying-glass1"></use>
                                     </svg>
                                 </a>
-                                <a href="javascript:void()" class="portfolio__item-graphics" title="Download">
+                                <a href="http://www.mediafire.com/file/yqsadpwtodz6ops/graphics01-main.jpg/file" target="_blank" class="portfolio__item-graphics" title="Download">
                                     <svg class="portfolio__item-project-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-download1"></use>
                                     </svg>
@@ -481,16 +481,16 @@
 
                 <div class="portfolio__items graphics">
                     <figure class="portfolio__item">
-                        <img src="<?php bloginfo('template_directory'); ?>/img/graphics02.jpg" alt="" class="portfolio__item-image">                       
+                        <img src="<?php bloginfo('template_directory'); ?>/img/graphics02.jpg" alt="22nd Foundation Day Shirt" class="portfolio__item-image">                       
                         <figcaption>
                             <h3 class="portfolio__item-title">22nd Foundation Day Shirt</h3>
                             <div class="portfolio__item-overview">
-                                <a href="javascript:void()" class="portfolio__item-graphics" title="View Image">
+                                <a href="<?php bloginfo('template_directory'); ?>/img/graphics02-main.png" data-rel="lightcase:graphics" data-lc-caption="I'm using Adobe Photoshop CC." class="portfolio__item-graphics" title="22nd Foundation Day Shirt">
                                     <svg class="portfolio__item-project-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-magnifying-glass1"></use>
                                     </svg>
                                 </a>
-                                <a href="javascript:void()" class="portfolio__item-graphics" title="Download">
+                                <a href="http://www.mediafire.com/file/8iq997dinn47s9p/graphics02-main.png/file" target="_blank" class="portfolio__item-graphics" title="Download">
                                     <svg class="portfolio__item-project-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-download1"></use>
                                     </svg>
@@ -554,7 +554,7 @@
                         <figcaption>
                             <h3 class="portfolio__item-title">wenchblitz</h3>
                             <div class="portfolio__item-overview">
-                                <a href="javascript:void()" class="portfolio__item-project" title="View Project">
+                                <a href="<?php bloginfo('template_directory'); ?>/img/old-portfolio.jpg" data-rel="lightcase" data-lc-caption="I'm using Adobe Photoshop for the design and HTML/HTML5, CSS/CSS3, jQuery & WordPress for development." class="portfolio__item-project" title="Previous portfolio site">
                                     <svg class="portfolio__item-project-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-magnifying-glass1"></use>
                                     </svg>
@@ -592,12 +592,12 @@
                         <figcaption>
                             <h3 class="portfolio__item-title">Game Community Site</h3>
                             <div class="portfolio__item-overview">
-                                <a href="javascript:void()" class="portfolio__item-project" title="View Project">
+                                <a href="<?php bloginfo('template_directory'); ?>/img/Web-Template-1.jpg" data-rel="lightcase:webdesign" data-lc-caption="I'm using Adobe Photoshop CS3." class="portfolio__item-project" title="Game Community Site">
                                     <svg class="portfolio__item-project-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-magnifying-glass1"></use>
                                     </svg>
                                 </a>
-                                <a href="javascript:void()" class="portfolio__item-source-code" title="Download">
+                                <a href="http://www.mediafire.com/file/8n89e3zfgz1819b/Web-Template-1.jpg/file" target="_blank" class="portfolio__item-source-code" title="Download">
                                     <svg class="portfolio__item-source-code-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-download1"></use>
                                     </svg>
@@ -621,12 +621,12 @@
                         <figcaption>
                             <h3 class="portfolio__item-title">Car Company Concept</h3>
                             <div class="portfolio__item-overview">
-                                <a href="javascript:void()" class="portfolio__item-project" title="View Project">
+                                <a href="<?php bloginfo('template_directory'); ?>/img/Web-Template-2.jpg" data-rel="lightcase:webdesign" data-lc-caption="I'm using Adobe Photoshop CS3." class="portfolio__item-project" title="Car Company Concept">
                                     <svg class="portfolio__item-project-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-magnifying-glass1"></use>
                                     </svg>
                                 </a>
-                                <a href="javascript:void()" class="portfolio__item-source-code" title="Download">
+                                <a href="http://www.mediafire.com/file/gdagpbvycvqycch/Web-Template-2.jpg/file" target="_blank" class="portfolio__item-source-code" title="Download">
                                     <svg class="portfolio__item-source-code-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-download1"></use>
                                     </svg>
@@ -650,12 +650,12 @@
                         <figcaption>
                             <h3 class="portfolio__item-title">Blog Page Concept</h3>
                             <div class="portfolio__item-overview">
-                                <a href="javascript:void()" class="portfolio__item-project" title="View Project">
+                                <a href="<?php bloginfo('template_directory'); ?>/img/Web-Template-3.jpg" data-rel="lightcase:webdesign" data-lc-caption="I'm using Adobe Photoshop CS3." class="portfolio__item-project" title="Blog Page Concept">
                                     <svg class="portfolio__item-project-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-magnifying-glass1"></use>
                                     </svg>
                                 </a>
-                                <a href="javascript:void()" class="portfolio__item-source-code" title="Download">
+                                <a href="http://www.mediafire.com/file/3ubwu8bob2b8d38/Web-Template-3.jpg/file" target="_blank" class="portfolio__item-source-code" title="Download">
                                     <svg class="portfolio__item-source-code-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-download1"></use>
                                     </svg>
@@ -679,12 +679,12 @@
                         <figcaption>
                             <h3 class="portfolio__item-title">Furniture Company Concept</h3>
                             <div class="portfolio__item-overview">
-                                <a href="javascript:void()" class="portfolio__item-project" title="View Project">
+                                <a href="<?php bloginfo('template_directory'); ?>/img/Web-Template-4.jpg" data-rel="lightcase:webdesign" data-lc-caption="I'm using Adobe Photoshop CS3." class="portfolio__item-project" title="Furniture Company Concept">
                                     <svg class="portfolio__item-project-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-magnifying-glass1"></use>
                                     </svg>
                                 </a>
-                                <a href="javascript:void()" class="portfolio__item-source-code" title="Download">
+                                <a href="http://www.mediafire.com/file/hr0bt4cpfziecgh/Web-Template-4.jpg/file" target="_blank" class="portfolio__item-source-code" title="Download">
                                     <svg class="portfolio__item-source-code-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-download1"></use>
                                     </svg>
@@ -708,7 +708,7 @@
                         <figcaption>
                             <h3 class="portfolio__item-title">Maple Theme</h3>
                             <div class="portfolio__item-overview">
-                                <a href="javascript:void()" class="portfolio__item-project" title="View Project">
+                                <a href="<?php bloginfo('template_directory'); ?>/img/Maple-Theme.jpg" data-rel="lightcase:wordpresstheme" data-lc-caption="I'm using Adobe Photoshop for the design and HTML/HTML5, CSS/CSS3, jQuery & WordPress for development." class="portfolio__item-project" class="portfolio__item-project" title="Maple Theme">
                                     <svg class="portfolio__item-project-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-magnifying-glass1"></use>
                                     </svg>
@@ -746,7 +746,7 @@
                         <figcaption>
                             <h3 class="portfolio__item-title">Grungee Theme</h3>
                             <div class="portfolio__item-overview">
-                                <a href="javascript:void()" class="portfolio__item-project" title="View Project">
+                                <a href="<?php bloginfo('template_directory'); ?>/img/Grungee-Theme.jpg" data-rel="lightcase:wordpresstheme" data-lc-caption="I'm using Adobe Photoshop for the design and HTML/HTML5, CSS/CSS3, jQuery & WordPress for development." class="portfolio__item-project" title="Grungee Theme">
                                     <svg class="portfolio__item-project-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-magnifying-glass1"></use>
                                     </svg>
@@ -784,7 +784,7 @@
                         <figcaption>
                             <h3 class="portfolio__item-title">PVZ Theme</h3>
                             <div class="portfolio__item-overview">
-                                <a href="javascript:void()" class="portfolio__item-project" title="View Project">
+                                <a href="<?php bloginfo('template_directory'); ?>/img/PVZ-Theme.jpg" data-rel="lightcase:wordpresstheme" data-lc-caption="I'm using Adobe Photoshop for the design and HTML/HTML5, CSS/CSS3, jQuery & WordPress for development." class="portfolio__item-project" title="PVZ Theme">
                                     <svg class="portfolio__item-project-icon">
                                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-magnifying-glass1"></use>
                                     </svg>

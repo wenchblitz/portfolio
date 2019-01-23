@@ -46,6 +46,47 @@ jQuery.noConflict();
         }
     }, {
         offset: '85%'
+        });
+    
+    // Waypoint: Technology ======================
+    $('#technology').waypoint(function(direction){
+        if (direction == 'down') {
+            $('#technology .container').addClass('animated rubberBand');
+        } else {
+            // $('#technology .container').removeClass('animated rubberBand');
+        }
+    }, {
+        offset: '90%'
+        });
+    
+    // Waypoint: Portfolio ========================
+    $('#portfolio').waypoint(function (direction) {
+        if (direction == 'down') {
+            $('.portfolio__items').each(function () {
+                $(this).delay('1000').addClass('animated zoomInDown');
+            });
+        } else {
+            $('.portfolio__items').each(function () {
+                // $(this).removeClass('animated zoomInDown');
+            });
+        }
+    }, {
+        offset: '75%'
+        });
+    
+    // Waypoint: Contact ========================
+    $('#contact').waypoint(function (direction) {
+        if (direction == 'down') {
+            $('.contact__info').addClass('animated fadeInUp');
+            $('.getintouch').addClass('animated fadeInUp');
+            $('.footer .container').addClass('animated fadeIn delay-1s');
+        } else {
+            // $('.contact__info').removeClass('animated fadeInUp');
+            // $('.getintouch').removeClass('animated fadeInUp');
+            // $('.footer .container').removeClass('animated fadeIn delay-1s');
+        }
+    }, {
+        offset: '80%'
     });
     
     // ========================================================
@@ -175,7 +216,7 @@ jQuery.noConflict();
         }
     });
 
-    var   fullName = $('#fullname'),
+    var     fullName = $('#fullname'),
             eMail = $('#email'),
             message = $('#message');
     
@@ -199,10 +240,5 @@ jQuery.noConflict();
     //                 Lightcase.js || LightBox
     // =========================================================
     $('a[data-rel^=lightcase]').lightcase();
-
-    // =========================================================
-    //                 jQuery AniView
-    // =========================================================
-
     
 })(jQuery);
