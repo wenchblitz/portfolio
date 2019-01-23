@@ -27,36 +27,36 @@
                     mail($mailTo, $subject, $txt, $headers);
                 } ?>            
                 <div class="hero__heading">
-                    <h1>Message Sent!</h1>
-                    <a href="<?php bloginfo('url');?>" class="hero__home">Home</a>
+                    <h1 class="animated rubberBand">Message Sent!</h1>
+                    <a href="<?php bloginfo('url');?>" class="hero__home animated fadeInDown delay-1s">Home</a>
                 </div>            
             <!-- Not verified - show form error -->
             <?php } else { ?>
                 <div class="hero__heading">
-                    <h1>Bots! :( </h1>
-                    <a href="<?php bloginfo('url');?>" class="hero__home">Home</a>
+                    <h1 class="animated rubberBand">Bots! :( </h1>
+                    <a href="<?php bloginfo('url');?>" class="hero__home animated fadeInDown delay-1s">Home</a>
                 </div>
             <?php } ?>
     <?php } else { ?>
         <div class="hero__heading">
-            <h1>Hello!</h1>
-            <span>I'm Jhonson V. Trazona, I do</span>
+            <h1 class="animated fadeInDown">Hello!</h1>
+            <span class="animated fadeInDown delay-1s">I'm Jhonson V. Trazona, I do</span>
             <div class="skills">
-                <div class="skill__box">
+                <div class="skill__box animated fadeInLeft delay-2s">
                     <svg class="skills__icon">
                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-pen"></use>
                     </svg>
                     <span>Web Design</span>
                 </div>
 
-                <div class="skill__box">
+                <div class="skill__box animated fadeInUp delay-2s">
                     <svg class="skills__icon">
                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-lab"></use>
                     </svg>
                     <span>Front-End Development</span>
                 </div>
 
-                <div class="skill__box">
+                <div class="skill__box animated fadeInRight delay-2s">
                     <svg class="skills__icon">
                         <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-wordpress1"></use>
                     </svg>

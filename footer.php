@@ -159,6 +159,7 @@
     <script src="<?php bloginfo('template_directory'); ?>/js/lib/jquery.validate.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/lib/jquery.waypoints.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/lib/lightcase.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/js/lib/pace.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/Map.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/app.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF4M-z_u8B1vKSmR_hP_PnWUr7uoBh3b0&callback=initMap" async defer></script>

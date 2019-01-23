@@ -36,15 +36,61 @@ jQuery.noConflict();
                 $('.skill__psd-mockup').css({animation: "psm 3s"});
                 $('.skill__convert-psd2html').css({ animation: "cp2h 3s" });                
             });
+
+            $('.about__me-photo').addClass('animated slideInUp');
         } else {
-            $('.skill__percentage').each(function(){
-                $(this).css({animation: ""});
+            // $('.skill__percentage').each(function(){
+            //     $(this).css({animation: ""});
+            // });
+
+
+            // $('.about__me-photo').removeClass('animated slideInUp');
+        }
+    }, {
+        offset: '85%'
+    });
+
+    // Waypoint: Technology ======================
+    $('#technology').waypoint(function(direction){
+        if (direction == 'down') {
+            $('#technology .container').addClass('animated rubberBand');
+        } else {
+            // $('#technology .container').removeClass('animated rubberBand');
+        }
+    }, {
+        offset: '90%'
+        });
+    
+    // Waypoint: Portfolio ========================
+    $('#portfolio').waypoint(function (direction) {
+        if (direction == 'down') {
+            $('.portfolio__items').each(function () {
+                $(this).delay('1000').addClass('animated zoomInDown');
+            });
+        } else {
+            $('.portfolio__items').each(function () {
+                // $(this).removeClass('animated zoomInDown');
             });
         }
     }, {
         offset: '75%'
+        });
+    
+    // Waypoint: Contact ========================
+    $('#contact').waypoint(function (direction) {
+        if (direction == 'down') {
+            $('.contact__info').addClass('animated fadeInUp');
+            $('.getintouch').addClass('animated fadeInUp');
+            $('.footer .container').addClass('animated fadeIn delay-1s');
+        } else {
+            // $('.contact__info').removeClass('animated fadeInUp');
+            // $('.getintouch').removeClass('animated fadeInUp');
+            // $('.footer .container').removeClass('animated fadeIn delay-1s');
+        }
+    }, {
+        offset: '80%'
     });
-
+    
     // ========================================================
     //      One Page Design:  SmoothScroll + ScrollSpy (MENU)
     // ========================================================

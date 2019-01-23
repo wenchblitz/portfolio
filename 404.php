@@ -7,8 +7,8 @@
 ?>
 <?php get_header();?>
         <div class="hero__heading">
-			<h1>Page not found :(</h1>
-			<a href="<?php bloginfo('url');?>" class="hero__home">Home</a>
+			<h1 class="animated rubberBand">Page not found :(</h1>
+			<a href="<?php bloginfo('url');?>" class="hero__home animated fadeInDown delay-1s">Home</a>
         </div>
     </header>
     
