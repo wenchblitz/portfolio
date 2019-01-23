@@ -161,7 +161,7 @@
     <script src="<?php bloginfo('template_directory'); ?>/js/lib/lightcase.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/lib/pace.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/Map.js"></script>
-    <script src="<?php bloginfo('template_directory'); ?>/js/app.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/js/app.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF4M-z_u8B1vKSmR_hP_PnWUr7uoBh3b0&callback=initMap" async defer></script>
     <script src='https://www.google.com/recaptcha/api.js?render=6Ld93YkUAAAAAJEzb8alASZD0oZL-WdQ-qrUA52P'></script>   
     <script>

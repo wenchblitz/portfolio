@@ -124,7 +124,7 @@
     <section id="technology" class="tech">
         <div class="container">
             <h1>Web Technology</h1>
-            <div class="tech__tools">                
+            <div class="tech__tools aniview" data-av-animation="slideInRight">                
                 <svg class="tech__tools-icon">
                     <use xlink:href="<?php bloginfo('template_directory'); ?>/img/sprite.svg#icon-html5"></use>
                 </svg>
